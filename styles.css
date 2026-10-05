@@ -9,11 +9,11 @@
   --border-strong: rgba(255, 255, 255, 0.16);
   --text: #eceef4;
   --muted: #9aa4b8;
-  --accent: #9b8cff;
+  --accent: #60a5fa;
   --accent-2: #22d3ee;
-  --grad: linear-gradient(120deg, #a78bfa 0%, #22d3ee 100%);
-  --btn-grad: linear-gradient(120deg, #5b3df5 0%, #2563eb 100%);
-  --glow-a: rgba(124, 92, 255, 0.28);
+  --grad: linear-gradient(120deg, #60a5fa 0%, #22d3ee 100%);
+  --btn-grad: linear-gradient(120deg, #1d4ed8 0%, #0284c7 100%);
+  --glow-a: rgba(59, 130, 246, 0.28);
   --glow-b: rgba(34, 211, 238, 0.18);
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
   --nav-bg: rgba(11, 13, 18, 0.72);
@@ -29,10 +29,10 @@
   --border-strong: rgba(15, 18, 32, 0.2);
   --text: #0f1220;
   --muted: #566074;
-  --accent: #5b3df5;
+  --accent: #1d4ed8;
   --accent-2: #0e7490;
-  --grad: linear-gradient(120deg, #5b3df5 0%, #0e7490 100%);
-  --glow-a: rgba(91, 61, 245, 0.16);
+  --grad: linear-gradient(120deg, #1d4ed8 0%, #0e7490 100%);
+  --glow-a: rgba(37, 99, 235, 0.16);
   --glow-b: rgba(14, 116, 144, 0.12);
   --shadow: 0 10px 30px rgba(20, 24, 50, 0.08);
   --nav-bg: rgba(247, 248, 251, 0.78);
@@ -131,8 +131,8 @@ img, svg { display: block; max-width: 100%; }
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn--primary { background: var(--btn-grad); color: #fff; box-shadow: 0 8px 24px rgba(91, 61, 245, 0.35); }
-.btn--primary:hover { color: #fff; box-shadow: 0 12px 30px rgba(91, 61, 245, 0.45); }
+.btn--primary { background: var(--btn-grad); color: #fff; box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35); }
+.btn--primary:hover { color: #fff; box-shadow: 0 12px 30px rgba(37, 99, 235, 0.45); }
 .btn--ghost { border-color: var(--border-strong); background: var(--surface); }
 .btn--ghost:hover { border-color: var(--accent); color: var(--text); }
 
@@ -363,7 +363,7 @@ img, svg { display: block; max-width: 100%; }
   :root, :root[data-theme="dark"], :root[data-theme="light"] {
     --bg: #fff; --bg-alt: #fff; --surface: #fff; --surface-2: #f3f4f8;
     --border: #d9dce6; --border-strong: #c3c8d6; --text: #111; --muted: #444;
-    --accent: #3d27c4; --accent-2: #0e5f75;
+    --accent: #1d4ed8; --accent-2: #0e5f75;
   }
   @page { margin: 14mm; }
   body { font-size: 10.5pt; line-height: 1.5; }
