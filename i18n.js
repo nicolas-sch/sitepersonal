@@ -132,14 +132,6 @@ window.I18N = {
     'contact.phone': 'Phone',
     'contact.location': 'Location',
 
-    'gate.title': 'Private preview',
-    'gate.text': 'Access to this site is restricted. Enter your credentials to continue.',
-    'gate.user': 'Username',
-    'gate.pass': 'Password',
-    'gate.submit': 'Enter',
-    'gate.error': 'Wrong username or password.',
-    'gate.request': 'Request access',
-
     'footer.top': 'Back to top'
   },
 
@@ -269,14 +261,6 @@ window.I18N = {
     'contact.phone': 'Teléfono',
     'contact.location': 'Ubicación',
 
-    'gate.title': 'Vista previa privada',
-    'gate.text': 'El acceso a este sitio está restringido. Introduce tus credenciales para continuar.',
-    'gate.user': 'Usuario',
-    'gate.pass': 'Contraseña',
-    'gate.submit': 'Entrar',
-    'gate.error': 'Usuario o contraseña incorrectos.',
-    'gate.request': 'Solicitar acceso',
-
     'footer.top': 'Volver arriba'
   },
 
@@ -405,14 +389,6 @@ window.I18N = {
     'contact.email': 'E-mail',
     'contact.phone': 'Telefone',
     'contact.location': 'Localização',
-
-    'gate.title': 'Prévia privada',
-    'gate.text': 'O acesso a este site é restrito. Informe suas credenciais para continuar.',
-    'gate.user': 'Usuário',
-    'gate.pass': 'Senha',
-    'gate.submit': 'Entrar',
-    'gate.error': 'Usuário ou senha incorretos.',
-    'gate.request': 'Solicitar acesso',
 
     'footer.top': 'Voltar ao topo'
   }

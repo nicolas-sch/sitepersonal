@@ -33,13 +33,6 @@
       } catch (e) {}
     })();
   </script>
-  <script>
-    // Show the access gate until this tab has been unlocked (see gate.js).
-    (function () {
-      try { if (sessionStorage.getItem('auth') === '1') return; } catch (e) {}
-      document.documentElement.classList.add('locked');
-    })();
-  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -75,32 +68,6 @@
       <symbol id="i-board" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4Zm5 0v16m6-16v10"/></symbol>
     </defs>
   </svg>
-
-  <!-- Access gate -->
-  <div class="gate" id="gate">
-    <div class="gate__bg" aria-hidden="true"></div>
-    <div class="lang gate__lang" role="group" data-i18n-aria="a11y.language" aria-label="Language">
-      <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
-      <button type="button" class="lang__btn" data-lang="es" aria-pressed="false">ES</button>
-      <button type="button" class="lang__btn" data-lang="pt" aria-pressed="false">PT</button>
-    </div>
-    <form class="gate__card card" id="gate-form" novalidate aria-labelledby="gate-title">
-      <span class="logo__mark" aria-hidden="true">NL</span>
-      <h2 class="gate__title" id="gate-title" data-i18n="gate.title">Private preview</h2>
-      <p class="gate__text" data-i18n="gate.text">Access to this site is restricted. Enter your credentials to continue.</p>
-      <label class="field">
-        <span data-i18n="gate.user">Username</span>
-        <input type="text" name="user" autocomplete="username" autocapitalize="none" spellcheck="false" required>
-      </label>
-      <label class="field">
-        <span data-i18n="gate.pass">Password</span>
-        <input type="password" name="pass" autocomplete="current-password" required>
-      </label>
-      <p class="gate__error" id="gate-error" role="alert" hidden data-i18n="gate.error">Wrong username or password.</p>
-      <button class="btn btn--primary" type="submit"><span data-i18n="gate.submit">Enter</span><svg class="icon"><use href="#i-arrow"/></svg></button>
-      <a class="gate__request" href="mailto:nicolasti.schmidt@gmail.com?subject=Access%20request" data-i18n="gate.request">Request access</a>
-    </form>
-  </div>
 
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
@@ -290,6 +257,5 @@
 
   <script src="i18n.js"></script>
   <script src="main.js"></script>
-  <script src="gate.js"></script>
 </body>
 </html>

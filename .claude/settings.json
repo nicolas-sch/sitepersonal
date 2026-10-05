@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(node -e ' *)",
-      "Bash(node --check gate.js)"
+      "Bash(node --check gate.js)",
+      "Bash(rm gate.js)",
+      "Bash(node --check i18n.js)",
+      "Bash(node --check main.js)"
     ]
   }
 }

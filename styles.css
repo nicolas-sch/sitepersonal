@@ -317,42 +317,6 @@ img, svg { display: block; max-width: 100%; }
 .footer { padding: 28px 0 36px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
 .footer__inner { display: flex; justify-content: space-between; gap: 16px; }
 
-/* ---------- access gate ---------- */
-.gate { display: none; }
-html.locked .gate {
-  position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 20px;
-  background: var(--bg); overflow-y: auto;
-}
-html.locked body > :not(.gate):not(script):not(svg):not(noscript) { display: none !important; }
-html.locked body { overflow: hidden; }
-.gate__bg {
-  position: absolute; inset: 0; pointer-events: none;
-  background:
-    radial-gradient(600px 420px at 12% 8%, var(--glow-a), transparent 70%),
-    radial-gradient(520px 420px at 92% 90%, var(--glow-b), transparent 70%);
-}
-.gate__lang { position: absolute; top: 20px; right: 20px; }
-.gate__card {
-  position: relative; display: grid; gap: 16px; width: min(420px, 100%); padding: 36px 32px;
-  box-shadow: var(--shadow); justify-items: stretch;
-}
-.gate__card .logo__mark { width: 48px; height: 48px; border-radius: 14px; font-size: 1.05rem; }
-.gate__title { font-size: 1.6rem; margin-top: 4px; }
-.gate__text { color: var(--muted); font-size: 0.97rem; margin-top: -6px; }
-.field { display: grid; gap: 6px; font-size: 0.85rem; font-weight: 600; }
-.field input {
-  width: 100%; padding: 13px 14px; border-radius: 12px; font: 500 1rem "Inter", sans-serif; color: var(--text);
-  background: var(--surface-2); border: 1px solid var(--border-strong); transition: border-color 0.2s, box-shadow 0.2s;
-}
-.field input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
-.gate__error { color: #f87171; font-size: 0.9rem; font-weight: 500; }
-:root[data-theme="light"] .gate__error { color: #b91c1c; }
-.gate__card .btn { justify-content: center; }
-.gate__request { justify-self: center; color: var(--muted); font-size: 0.9rem; }
-.gate__request:hover { color: var(--accent); }
-.gate__card.is-shaking { animation: shake 0.4s; }
-@keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
-
 /* ---------- reveal ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
