@@ -149,13 +149,14 @@
     stack.textContent = '';
     window.STACK.forEach(function (group) {
       var card = el('div', 'card stack__group reveal' + (group.accent ? ' stack__group--accent' : ''));
-      card.appendChild(el('h3', null, t('skills.group.' + group.key)));
+      card.appendChild(el('h4', null, t('skills.group.' + group.key)));
       var tags = el('ul', 'tags');
       group.items.forEach(function (name) { tags.appendChild(el('li', 'tag', name)); });
       card.appendChild(tags);
       stack.appendChild(card);
     });
-    fillList('strengths', t('strengths'), 'chip');
+    fillList('skills-tech', t('skills.tech'), 'chip');
+    fillList('skills-soft', t('skills.soft'), 'chip');
   }
 
   function eduCard(opts) {
@@ -235,7 +236,7 @@
     [
       ['lang.es', 'level.native', 100],
       ['lang.pt', 'level.native', 100],
-      ['lang.en', 'level.b2', 67]
+      ['lang.en', 'level.advanced', 85]
     ].forEach(function (l) {
       var li = el('li', 'langs__item');
       var head = el('div', 'langs__head');
@@ -318,7 +319,7 @@
       root.dataset.theme = next;
       safeSet('theme', next);
       var meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute('content', next === 'light' ? '#f7f8fb' : '#0b0d12');
+      if (meta) meta.setAttribute('content', next === 'light' ? '#f5f8f2' : '#0e1c2e');
     });
 
     document.getElementById('print-btn').addEventListener('click', function () {
