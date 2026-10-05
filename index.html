@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicolas Leschiutta · Full-Stack Developer</title>
+  <meta name="description" content="Nicolas Leschiutta, full-stack developer and aspiring project manager. PMI-RC and Scrum certified.">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nicolas Leschiutta · Full-Stack Developer">
+  <meta property="og:description" content="Full-stack developer and aspiring project manager. PMI-RC and Scrum certified.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='white'%3ENL%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved/preferred theme before paint to avoid a flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.dataset.theme = theme;
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicolas Leschiutta",
+    "jobTitle": "Full-Stack Developer",
+    "email": "mailto:nicolasti.schmidt@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Cullera", "addressCountry": "ES" },
+    "sameAs": [
+      "https://github.com/nicolas-sch",
+      "https://www.linkedin.com/in/nicolas-schmidt-ti/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm1 .5 8 6 8-6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Zm0-8.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0-15v2m0 16v2M4.2 4.2l1.4 1.4m12.8 12.8 1.4 1.4M2 12h2m16 0h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M21 13.2A8.5 8.5 0 0 1 10.8 3a8.5 8.5 0 1 0 10.2 10.2Z"/></symbol>
+      <symbol id="i-print" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7v-7Z"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm-3.5-.5L7 22l5-3 5 3-1.5-8.5"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m2 9 10-5 10 5-10 5L2 9Zm4 2.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m8 8-4 4 4 4m8-8 4 4-4 4m-2.5-11-3 14"/></symbol>
+      <symbol id="i-board" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4V4Zm5 0v16m6-16v10"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#top" aria-label="Nicolas Leschiutta">
+        <span class="logo__mark">NL</span>
+        <span class="logo__text">Nicolas Leschiutta</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Main">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav__tools">
+        <div class="lang" role="group" data-i18n-aria="a11y.language" aria-label="Language">
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang__btn" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" class="lang__btn" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+        <button type="button" class="icon-btn" id="print-btn" data-i18n-aria="nav.print" aria-label="Print or save as PDF">
+          <svg class="icon"><use href="#i-print"/></svg>
+        </button>
+        <button type="button" class="icon-btn" id="theme-btn" data-i18n-aria="a11y.theme" aria-label="Toggle theme">
+          <svg class="icon icon--moon"><use href="#i-moon"/></svg>
+          <svg class="icon icon--sun"><use href="#i-sun"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav__burger" id="burger" aria-expanded="false" aria-controls="nav-links" data-i18n-aria="a11y.menu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge"><span class="badge__dot"></span><span data-i18n="hero.badge">Open to developer and project management roles</span></p>
+          <p class="hero__hello"><span data-i18n="hero.hello">Hi, I'm</span> <strong>Nicolas Leschiutta</strong></p>
+          <h1 class="hero__title" data-i18n-html="hero.title">I build the product. <span class="grad">Next, I want to lead how it ships.</span></h1>
+          <p class="hero__lead" id="hero-lead"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact"><span data-i18n="hero.cta.contact">Get in touch</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#experience" data-i18n="hero.cta.experience">View experience</a>
+          </div>
+          <ul class="social">
+            <li><a href="https://github.com/nicolas-sch" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/nicolas-schmidt-ti/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="mailto:nicolasti.schmidt@gmail.com" data-i18n-aria="contact.email" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a></li>
+          </ul>
+        </div>
+
+        <aside class="hero__card card" aria-label="Profile">
+          <div class="avatar" aria-hidden="true"><span>NL</span></div>
+          <h2 class="hero__card-name">Nicolas Leschiutta</h2>
+          <p class="hero__card-role" data-i18n="hero.role">Full-Stack Developer</p>
+          <p class="hero__card-loc"><svg class="icon"><use href="#i-pin"/></svg> Cullera, <span data-i18n="country.es">Spain</span></p>
+          <div class="now">
+            <span class="now__label" data-i18n="hero.now">Currently</span>
+            <span class="now__value" data-i18n="hero.nowValue">Full-stack Developer, RTVE team at Hiberus</span>
+          </div>
+          <div class="path" aria-label="Career path">
+            <span class="path__step path__step--done" data-i18n="hero.path.dev">Developer</span>
+            <span class="path__line"></span>
+            <span class="path__step path__step--now" data-i18n="hero.path.pm">Project Manager</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container">
+        <ul class="stats" id="stats"></ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+          <h2 data-i18n="about.title">A developer who thinks in delivery</h2>
+        </header>
+        <div class="about reveal">
+          <div class="about__text">
+            <p data-i18n="about.p1"></p>
+            <p data-i18n="about.p2"></p>
+            <p data-i18n="about.p3"></p>
+          </div>
+        </div>
+
+        <div class="tracks">
+          <article class="track card reveal">
+            <div class="track__icon"><svg class="icon"><use href="#i-code"/></svg></div>
+            <h3 data-i18n="track.dev.title">Development</h3>
+            <ul class="ticks" id="track-dev"></ul>
+          </article>
+          <article class="track card reveal">
+            <div class="track__icon track__icon--alt"><svg class="icon"><use href="#i-board"/></svg></div>
+            <h3 data-i18n="track.pm.title">Project management</h3>
+            <ul class="ticks" id="track-pm"></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="exp.eyebrow">Experience</p>
+          <h2 data-i18n="exp.title">Where I've worked</h2>
+          <p class="section__sub" data-i18n="exp.sub">Seven years across Brazil and Spain, from startups and agencies to large product teams.</p>
+        </header>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+          <h2 data-i18n="skills.title">Tools of the trade</h2>
+        </header>
+        <div class="stack" id="stack"></div>
+
+        <h3 class="subhead reveal" data-i18n="skills.proTitle">Strengths</h3>
+        <ul class="chips reveal" id="strengths"></ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="edu.eyebrow">Education</p>
+          <h2 data-i18n="edu.title">Learning, certified</h2>
+        </header>
+
+        <div class="edu-grid" id="edu-grid"></div>
+
+        <div class="lang-block reveal">
+          <h3 class="subhead" data-i18n="langs.title">Languages</h3>
+          <ul class="langs" id="langs"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact card reveal">
+          <div class="contact__copy">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Let's work together</h2>
+            <p data-i18n="contact.text">Looking for a developer, or a future project manager who still reads the code? Write me.</p>
+            <a class="btn btn--primary" href="mailto:nicolasti.schmidt@gmail.com"><span data-i18n="contact.cta">Send an email</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+          <ul class="contact__list">
+            <li><svg class="icon"><use href="#i-mail"/></svg><div><span data-i18n="contact.email">Email</span><a href="mailto:nicolasti.schmidt@gmail.com">nicolasti.schmidt@gmail.com</a></div></li>
+            <li><svg class="icon"><use href="#i-phone"/></svg><div><span data-i18n="contact.phone">Phone</span><a href="tel:+34604905205">+34 604 905 205</a></div></li>
+            <li><svg class="icon"><use href="#i-linkedin"/></svg><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/nicolas-schmidt-ti/" target="_blank" rel="noopener noreferrer">in/nicolas-schmidt-ti</a></div></li>
+            <li><svg class="icon"><use href="#i-github"/></svg><div><span>GitHub</span><a href="https://github.com/nicolas-sch" target="_blank" rel="noopener noreferrer">nicolas-sch</a></div></li>
+            <li><svg class="icon"><use href="#i-pin"/></svg><div><span data-i18n="contact.location">Location</span><b>Calle Lorenzo Borja, 1, 46400 Cullera, <span data-i18n="country.es">Spain</span></b></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Nicolas Leschiutta</p>
+      <a href="#top" data-i18n="footer.top">Back to top</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <p style="padding:1rem;text-align:center">Nicolas Leschiutta, Full-Stack Developer. Please enable JavaScript to view this page, or write to nicolasti.schmidt@gmail.com.</p>
+  </noscript>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
