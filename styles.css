@@ -349,7 +349,6 @@ img, svg { display: block; max-width: 100%; }
 }
 
 @media (max-width: 600px) {
-  #print-btn { display: none; }
   .logo { font-size: 1rem; }
   .job__meta { text-align: left; }
   .job__dates { white-space: normal; }

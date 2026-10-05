@@ -322,12 +322,6 @@
       if (meta) meta.setAttribute('content', next === 'light' ? '#f5f8f2' : '#0e1c2e');
     });
 
-    document.getElementById('print-btn').addEventListener('click', function () {
-      // Reveal everything first so nothing is blank in the printout.
-      document.querySelectorAll('.reveal').forEach(function (n) { n.classList.add('is-visible'); });
-      window.print();
-    });
-
     var burger = document.getElementById('burger');
     var nav = document.getElementById('nav');
     function closeMenu() {

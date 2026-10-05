@@ -20,7 +20,6 @@ window.I18N = {
     'nav.skills': 'Skills',
     'nav.education': 'Education',
     'nav.contact': 'Contact',
-    'nav.print': 'Print or save as PDF',
 
     'hero.hello': "Hi, I'm",
     'hero.title': 'I build the product. <span class="grad">Next, I want to lead how it ships.</span>',
@@ -154,7 +153,6 @@ window.I18N = {
     'nav.skills': 'Habilidades',
     'nav.education': 'Formación',
     'nav.contact': 'Contacto',
-    'nav.print': 'Imprimir o guardar como PDF',
 
     'hero.hello': 'Hola, soy',
     'hero.title': 'Construyo el producto. <span class="grad">Ahora quiero liderar cómo se entrega.</span>',
@@ -288,7 +286,6 @@ window.I18N = {
     'nav.skills': 'Habilidades',
     'nav.education': 'Formação',
     'nav.contact': 'Contato',
-    'nav.print': 'Imprimir ou salvar como PDF',
 
     'hero.hello': 'Olá, eu sou',
     'hero.title': 'Eu construo o produto. <span class="grad">Agora quero liderar como ele é entregue.</span>',
@@ -420,17 +417,17 @@ window.EXPERIENCE = [
     tech: ['React.js', 'Next.js', 'TypeScript', 'SASS', 'Node.js', 'PHP', 'Git', 'Jira', 'Confluence'],
     bullets: {
       en: [
-        'Member of the RTVE team: new features, bug fixes and hotfixes.',
+        'I am part of the RTVE infographics team; my responsibilities include web page development, new features, bug fixes and hotfixes.',
         'Front-end layout and development, plus ongoing maintenance and improvement of the platform.',
         'Task management with Jira and Confluence; code versioning with Git.'
       ],
       es: [
-        'Miembro del equipo de RTVE: nuevas funcionalidades, corrección de bugs y hotfixes.',
+        'Formo parte del equipo de infografías de RTVE; mis responsabilidades incluyen el desarrollo de páginas web, nuevas funcionalidades, la corrección de errores y hotfixes.',
         'Maquetación y desarrollo front-end, además del mantenimiento y la mejora continua de la plataforma.',
         'Gestión de tareas con Jira y Confluence; control de versiones con Git.'
       ],
       pt: [
-        'Membro da equipe da RTVE: novas funcionalidades, correção de bugs e hotfixes.',
+        'Faço parte da equipe de infografias da RTVE; minhas responsabilidades incluem o desenvolvimento de páginas web, novas funcionalidades, a correção de erros e hotfixes.',
         'Layout e desenvolvimento front-end, além da manutenção e melhoria contínua da plataforma.',
         'Gestão de tarefas com Jira e Confluence; versionamento de código com Git.'
       ]
