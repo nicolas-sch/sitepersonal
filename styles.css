@@ -214,11 +214,7 @@ img, svg { display: block; max-width: 100%; }
 .hero__card-name { font-size: 1.4rem; }
 .hero__card-role { margin-top: 4px; color: var(--accent); font-weight: 600; }
 
-.path { display: flex; align-items: center; gap: 8px; margin-top: 22px; }
-.path__step { padding: 6px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; white-space: nowrap; }
-.path__step--done { background: color-mix(in srgb, var(--accent-2) 16%, transparent); color: var(--accent-2); }
-.path__step--now { border: 1.5px dashed var(--accent); color: var(--accent); }
-.path__line { flex: 1; height: 2px; min-width: 14px; background: var(--grad); border-radius: 2px; }
+.hero__card-tags { justify-content: center; margin-top: 22px; }
 
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 64px; }
 .stat { padding: 20px 22px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border); }

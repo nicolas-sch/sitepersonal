@@ -89,7 +89,7 @@
       [yearsOfExperience() + '+', t('stats.years')],
       ['2', t('stats.countries')],
       ['3', t('stats.languages')],
-      ['2', t('stats.credentials')]
+      ['6', t('stats.companies')]
     ];
     stats.forEach(function (s) {
       var li = el('li', 'stat');
@@ -101,7 +101,7 @@
 
   function renderTracks() {
     fillList('track-dev', t('track.dev.items'));
-    fillList('track-pm', t('track.pm.items'));
+    fillList('track-qa', t('track.qa.items'));
   }
 
   function renderTimeline() {
@@ -163,7 +163,7 @@
     var card = el('article', 'card edu' + (opts.accent ? ' edu--accent' : '') + ' reveal');
     var top = el('div', 'edu__top');
     var icon = el('span', 'edu__icon');
-    icon.innerHTML = '<svg class="icon"><use href="#' + (opts.accent ? 'i-award' : 'i-cap') + '"/></svg>';
+    icon.innerHTML = '<svg class="icon"><use href="#' + (opts.award ? 'i-award' : 'i-cap') + '"/></svg>';
     top.appendChild(icon);
     if (opts.tag) top.appendChild(el('span', 'pill', opts.tag));
     card.appendChild(top);
@@ -187,24 +187,9 @@
       return inner;
     }
 
-    var pm = group('edu.pm', 'edu-group--pm');
-    pm.appendChild(eduCard({
-      accent: true,
-      title: 'PMI Project Management Ready™ Certification (PMI-RC)',
-      org: 'Project Management Institute (PMI)',
-      tag: t('edu.pmi.tag'),
-      desc: t('edu.pmi.desc')
-    }));
-    pm.appendChild(eduCard({
-      accent: true,
-      title: t('edu.scrum.title'),
-      org: 'Femxa',
-      tag: t('edu.scrum.tag'),
-      desc: t('edu.scrum.desc')
-    }));
-
     var academic = group('edu.academic', 'edu-group--academic');
     academic.appendChild(eduCard({
+      accent: true,
       title: t('edu.degree.title'),
       org: 'Anhanguera Educacional · Porto Alegre',
       meta: formatMonth('2022-01') + ' – ' + t('edu.inProgress')
@@ -228,6 +213,22 @@
     t('edu.courses.items').forEach(function (c) { chips.appendChild(el('li', 'chip', c)); });
     courses.appendChild(chips);
     grid.appendChild(courses);
+
+    var pm = group('edu.pm', 'edu-group--pm');
+    pm.appendChild(eduCard({
+      award: true,
+      title: 'PMI Project Management Ready™ Certification (PMI-RC)',
+      org: 'Project Management Institute (PMI)',
+      tag: t('edu.pmi.tag'),
+      desc: t('edu.pmi.desc')
+    }));
+    pm.appendChild(eduCard({
+      award: true,
+      title: t('edu.scrum.title'),
+      org: 'Femxa',
+      tag: t('edu.scrum.tag'),
+      desc: t('edu.scrum.desc')
+    }));
   }
 
   function renderLanguages() {

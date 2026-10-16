@@ -5,7 +5,9 @@
       "Bash(node --check gate.js)",
       "Bash(rm gate.js)",
       "Bash(node --check i18n.js)",
-      "Bash(node --check main.js)"
+      "Bash(node --check main.js)",
+      "Bash(cp i18n.js \"C:/Users/NLESCH~1/AppData/Local/Temp/claude/c--Users-nleschiutta-Desktop-Personal-SitePersonal/77a7c1c7-45e9-4528-9fe8-5df48a3f2ab5/scratchpad/i18n.backup.js\")",
+      "Bash(node \"C:/Users/NLESCH~1/AppData/Local/Temp/claude/c--Users-nleschiutta-Desktop-Personal-SitePersonal/77a7c1c7-45e9-4528-9fe8-5df48a3f2ab5/scratchpad/devfocus.js\")"
     ]
   }
 }

@@ -6,7 +6,7 @@
     <title>Nicolas Leschiutta · Full-Stack Developer</title>
     <meta
       name="description"
-      content="Nicolas Leschiutta, full-stack developer and aspiring project manager. PMI-RC and Scrum certified."
+      content="Nicolas Leschiutta, full-stack developer with 7+ years building web products with React, Next.js and TypeScript."
     />
     <meta name="theme-color" content="#0e1c2e" />
     <link rel="canonical" href="https://www.nicolasschmidt.eu/" />
@@ -19,7 +19,7 @@
     />
     <meta
       property="og:description"
-      content="Full-stack developer and aspiring project manager. PMI-RC and Scrum certified."
+      content="Full-stack developer with 7+ years building web products with React, Next.js and TypeScript."
     />
     <meta
       property="og:image"
@@ -29,7 +29,7 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Nicolas Leschiutta, Full-Stack Developer growing into Project Management"
+      content="Nicolas Leschiutta, Full-Stack Developer. React, Next.js and TypeScript."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -201,6 +201,16 @@
             d="M4 4h16v16H4V4Zm5 0v16m6-16v10"
           />
         </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3 4 6v6c0 4.5 3.2 8.2 8 9 4.8-.8 8-4.5 8-9V6l-8-3Zm-3 9 2.2 2.2L15 10"
+          />
+        </symbol>
         <symbol id="i-spark" viewBox="0 0 24 24">
           <path
             fill="none"
@@ -350,17 +360,12 @@
             <p class="hero__card-role" data-i18n="hero.role">
               Full-Stack Developer
             </p>
-            <div class="path" aria-label="Career path">
-              <span
-                class="path__step path__step--done"
-                data-i18n="hero.path.dev"
-                >Developer</span
-              >
-              <span class="path__line"></span>
-              <span class="path__step path__step--now" data-i18n="hero.path.pm"
-                >Project Manager</span
-              >
-            </div>
+            <ul class="tags hero__card-tags">
+              <li class="tag">React.js</li>
+              <li class="tag">Next.js</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">Node.js</li>
+            </ul>
           </aside>
         </div>
 
@@ -374,7 +379,7 @@
         <div class="container">
           <header class="section__head reveal">
             <p class="eyebrow" data-i18n="about.eyebrow">About</p>
-            <h2 data-i18n="about.title">A developer who thinks in delivery</h2>
+            <h2 data-i18n="about.title">A developer who thinks about the whole product</h2>
           </header>
           <div class="about reveal">
             <div class="about__text">
@@ -394,10 +399,10 @@
             </article>
             <article class="track card reveal">
               <div class="track__icon track__icon--alt">
-                <svg class="icon"><use href="#i-board" /></svg>
+                <svg class="icon"><use href="#i-check" /></svg>
               </div>
-              <h3 data-i18n="track.pm.title">Project management</h3>
-              <ul class="ticks" id="track-pm"></ul>
+              <h3 data-i18n="track.qa.title">Quality &amp; performance</h3>
+              <ul class="ticks" id="track-qa"></ul>
             </article>
           </div>
 
@@ -471,8 +476,8 @@
               <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
               <h2 data-i18n="contact.title">Let's work together</h2>
               <p data-i18n="contact.text">
-                Looking for a developer, or a future project manager who still
-                reads the code? Write me.
+                Looking for a developer to join your team or build your next
+                product? Write me.
               </p>
               <a
                 class="btn btn--primary"
